@@ -81,9 +81,8 @@
       // call function playsound
       window.addEventListener("keydown", playSound);
 
-      // loops through each key
-      // check if the key is pressed or not
-      // if not, we remove the animation
+      // call function to remove transition
+      
       const keys = document.querySelectorAll(".key");
       keys.forEach((key) => {
         key.addEventListener("transitionend", removeTransition);
